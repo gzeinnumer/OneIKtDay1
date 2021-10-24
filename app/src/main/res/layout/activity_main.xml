@@ -21,7 +21,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!--todo 36 fragment to FragmentContainerView-->
+    <!--todo 36-->
     <fragment
         android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"

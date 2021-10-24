@@ -7,9 +7,24 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--todo 4-->
+    <!--todo 24-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.OneIKtDay1.AppBarOverlay">
 
-    <androidx.fragment.app.FragmentContainerView
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.OneIKtDay1.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--end todo 24-->
+
+    <!--todo androidx.fragment.app.FragmentContainerView to fragment25-->
+    <fragment
         android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
@@ -17,4 +32,5 @@
         android:layout_weight="1"
         app:defaultNavHost="true"
         app:navGraph="@navigation/app_navigation" />
+    <!--end todo 25-->
 </LinearLayout>

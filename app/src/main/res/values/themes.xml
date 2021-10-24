@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.OneIKtDay1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+<!--todo 26 DarkActionBar to NoActionBar-->
+    <style name="Theme.OneIKtDay1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -13,7 +14,10 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+<!--todo 25-->
     <style name="Theme.OneIKtDay1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.OneIKtDay1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+<!--todo 25-->
 </resources>

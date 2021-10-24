@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_navigation"
     app:startDestination="@id/mainFragment">
-<!--todo 15-->
 
     <fragment
         android:id="@+id/mainFragment"

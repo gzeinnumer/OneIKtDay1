@@ -9,11 +9,10 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.gzeinnumer.est.SpannableBuilder
+import com.gzeinnumer.oneiktday1.R
 import com.gzeinnumer.oneiktday1.databinding.FragmentConfirmationBinding
 import com.gzeinnumer.oneiktday1.model.Money
-import com.gzeinnumer.oneiktday1.R
 
-//todo 14.2
 class ConfirmationFragment : Fragment(R.layout.fragment_confirmation) {
 
     private val binding: FragmentConfirmationBinding by viewBinding()
@@ -21,11 +20,9 @@ class ConfirmationFragment : Fragment(R.layout.fragment_confirmation) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //todo 22
         initView()
     }
 
-    //todo 23
     lateinit var navController: NavController
     lateinit var name: String
     lateinit var money: Money
@@ -49,5 +46,4 @@ class ConfirmationFragment : Fragment(R.layout.fragment_confirmation) {
             .build()
         binding.tvMsg.text = msg
     }
-    //end todo 23
 }

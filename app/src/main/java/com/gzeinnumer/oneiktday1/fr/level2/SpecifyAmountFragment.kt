@@ -1,10 +1,10 @@
 package com.gzeinnumer.oneiktday1.fr.level2
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.View
 import android.viewbinding.library.fragment.viewBinding
 import androidx.core.os.bundleOf
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.gzeinnumer.oneiktday1.R
@@ -12,7 +12,6 @@ import com.gzeinnumer.oneiktday1.databinding.FragmentSpecifyAmountBinding
 import com.gzeinnumer.oneiktday1.model.Money
 import java.math.BigDecimal
 
-//todo 12
 class SpecifyAmountFragment : Fragment(R.layout.fragment_specify_amount) {
 
     private val binding: FragmentSpecifyAmountBinding by viewBinding()
@@ -20,12 +19,10 @@ class SpecifyAmountFragment : Fragment(R.layout.fragment_specify_amount) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //todo 20
         initView()
         initOnClick()
     }
 
-    //todo 21
     lateinit var navController: NavController
     lateinit var name: String
 
@@ -46,5 +43,4 @@ class SpecifyAmountFragment : Fragment(R.layout.fragment_specify_amount) {
             activity?.onBackPressed()
         }
     }
-    //end todo 21
 }

@@ -11,18 +11,21 @@
         android:layout_height="wrap_content"
         android:text="MainFragment"
         android:textSize="20sp" />
-    <Button
-        android:id="@+id/btn_view_transcation"
-        style="@style/MyButtonContained"
-        android:text="View Transcation" />
 
-    <Button
-        android:id="@+id/btn_send_money"
-        style="@style/MyButtonContained"
-        android:text="Send Money" />
+<!--todo 32 matikan ini-->
+<!--    <Button-->
+<!--        android:id="@+id/btn_view_transcation"-->
+<!--        style="@style/MyButtonContained"-->
+<!--        android:text="View Transcation" />-->
 
-    <Button
-        android:id="@+id/btn_view_balance"
-        style="@style/MyButtonContained"
-        android:text="View Balance" />
+<!--    <Button-->
+<!--        android:id="@+id/btn_send_money"-->
+<!--        style="@style/MyButtonContained"-->
+<!--        android:text="Send Money" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_view_balance"-->
+<!--        style="@style/MyButtonContained"-->
+<!--        android:text="View Balance" />-->
+<!--end todo 32-->
 </LinearLayout>

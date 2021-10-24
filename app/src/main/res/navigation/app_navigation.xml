@@ -9,22 +9,24 @@
         android:id="@+id/mainFragment"
         android:name="com.gzeinnumer.oneiktday1.fr.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
-        <action
-            android:id="@+id/action_mainFragment_to_chooseRecipientFragment"
-            app:destination="@id/chooseRecipientFragment" />
-        <action
-            android:id="@+id/action_mainFragment_to_viewTransactionFragment"
-            app:destination="@id/viewTransactionFragment" />
-        <action
-            android:id="@+id/action_mainFragment_to_viewBalanceFragment"
-            app:destination="@id/viewBalanceFragment" />
+        tools:layout="@layout/fragment_main">
+        <!--todo 35 matikan ini-->
+        <!--        <action
+                    android:id="@+id/action_mainFragment_to_chooseRecipientFragment"
+                    app:destination="@id/chooseRecipientFragment" />
+                <action
+                    android:id="@+id/action_mainFragment_to_viewTransactionFragment"
+                    app:destination="@id/viewTransactionFragment" />
+                <action
+                    android:id="@+id/action_mainFragment_to_viewBalanceFragment"
+                    app:destination="@id/viewBalanceFragment" /> -->
+        <!--end todo 35-->
     </fragment>
     <fragment
         android:id="@+id/chooseRecipientFragment"
         android:name="com.gzeinnumer.oneiktday1.fr.level1.ChooseRecipientFragment"
         android:label="fragment_choose_recipient"
-        tools:layout="@layout/fragment_choose_recipient" >
+        tools:layout="@layout/fragment_choose_recipient">
         <action
             android:id="@+id/action_chooseRecipientFragment_to_specifyAmountFragment"
             app:destination="@id/specifyAmountFragment" />
@@ -33,20 +35,23 @@
         android:id="@+id/confirmationFragment"
         android:name="com.gzeinnumer.oneiktday1.fr.level3.ConfirmationFragment"
         android:label="fragment_confirmation"
-        tools:layout="@layout/fragment_confirmation" >
-        <argument android:name="recipient"
-            android:defaultValue="None"/>
-        <argument android:name="amount"
-            app:argType="com.gzeinnumer.oneiktday1.model.Money"/>
+        tools:layout="@layout/fragment_confirmation">
+        <argument
+            android:name="recipient"
+            android:defaultValue="None" />
+        <argument
+            android:name="amount"
+            app:argType="com.gzeinnumer.oneiktday1.model.Money" />
     </fragment>
     <fragment
         android:id="@+id/specifyAmountFragment"
         android:name="com.gzeinnumer.oneiktday1.fr.level2.SpecifyAmountFragment"
         android:label="fragment_specify_amount"
-        tools:layout="@layout/fragment_specify_amount" >
+        tools:layout="@layout/fragment_specify_amount">
 
-        <argument android:name="recipient"
-            android:defaultValue="None"/>
+        <argument
+            android:name="recipient"
+            android:defaultValue="None" />
         <action
             android:id="@+id/action_specifyAmountFragment_to_confirmationFragment"
             app:destination="@id/confirmationFragment" />

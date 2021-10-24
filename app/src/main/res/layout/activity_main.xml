@@ -21,6 +21,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!--todo 36 fragment to FragmentContainerView-->
     <fragment
         android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -29,12 +30,11 @@
         android:layout_weight="1"
         app:defaultNavHost="true"
         app:navGraph="@navigation/app_navigation" />
+    <!--end todo 36-->
 
-    <!--todo 29-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/bottom_nav_menu" />
-    <!--end todo 29-->
 </LinearLayout>

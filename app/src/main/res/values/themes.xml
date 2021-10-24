@@ -1,6 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-<!--todo 26 DarkActionBar to NoActionBar-->
     <style name="Theme.OneIKtDay1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
@@ -15,9 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-<!--todo 25-->
     <style name="Theme.OneIKtDay1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.OneIKtDay1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-<!--todo 25-->
 </resources>

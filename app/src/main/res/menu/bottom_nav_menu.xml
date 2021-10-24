@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--todo 30-->
+    <item
+        android:id="@id/mainFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@id/viewTransactionFragment"
+        android:icon="@drawable/ic_monetization"
+        android:title="View Transcation" />
+    <item
+        android:id="@id/chooseRecipientFragment"
+        android:icon="@drawable/ic_send"
+        android:title="Send Money" />
+    <item
+        android:id="@id/viewBalanceFragment"
+        android:icon="@drawable/ic_balance"
+        android:title="View Balance" />
+</menu>
